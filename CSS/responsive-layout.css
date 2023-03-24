@@ -1,0 +1,40 @@
+main,
+header,
+footer {
+  padding: 0 20vw;
+}
+
+article {
+  padding: 0.5rem 0;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  main,
+  header,
+  footer {
+    padding: 0 0.5rem;
+  }
+
+  .mobile-navbar {
+    display: inherit;
+    padding: inherit;
+  }
+
+  .mobile-navbar .top-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mobile-navbar .bottom-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+}
